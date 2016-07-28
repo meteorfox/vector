@@ -34,7 +34,8 @@
         .module('vector')
         .constant('config', {
             'protocol': 'http', // PMWEBD protocol (http or https)
-            'port': 44323,  // PMWEBD port
+            'port': 80,  // PMWEBD port
+            'baseURL': '/pmweb', // Default '', PMWEBD baseURL useful for reverse-proxy
             'hostspec': 'localhost', // Default PMCD hostspec
             'interval': '2', // Default update interval in seconds
             'window': '2', // Default graph time window in minutes

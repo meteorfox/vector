@@ -255,6 +255,9 @@
                 if (!$rootScope.properties.port) {
                     $rootScope.properties.port = config.port;
                 }
+                if (!$rootScope.properties.baseURL) {
+                    $rootScope.properties.baseURL = config.baseURL;
+                }
                 if (!$rootScope.properties.context ||
                     $rootScope.properties.context < 0) {
                     updateContext();
@@ -267,6 +270,7 @@
                     host: '',
                     hostspec: config.hostspec,
                     port: config.port,
+                    baseURL: config.baseURL,
                     context: -1,
                     hostname: null,
                     window: config.window,
